@@ -113,7 +113,7 @@
     <!-- dependency versions -->
     <org.eclipse.jgit.version>6.7.0.202309050840-r</org.eclipse.jgit.version>
     <!-- These are annotation with a retention of CLASS. They can be freely upgraded. -->
-    <bnd.annotation.version>6.4.1</bnd.annotation.version>
+    <bnd.annotation.version>7.0.0</bnd.annotation.version>
     <osgi.annotation.version>8.1.0</osgi.annotation.version>
     <osgi.annotation.bundle.version>2.0.0</osgi.annotation.bundle.version>
 
