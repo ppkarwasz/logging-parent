@@ -117,7 +117,7 @@
     <osgi.annotation.version>8.1.0</osgi.annotation.version>
     <osgi.annotation.bundle.version>2.0.0</osgi.annotation.bundle.version>
 
-    <spotbugs-annotations.version>4.7.3</spotbugs-annotations.version>
+    <spotbugs-annotations.version>4.8.3</spotbugs-annotations.version>
 
     <!-- plugin versions -->
     <beanshell-maven-plugin.version>1.4</beanshell-maven-plugin.version>
