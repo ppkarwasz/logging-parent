@@ -45,7 +45,7 @@ jobs:
 
       - name: Fetch metadata
         id: dependabot-metadata
-        uses: dependabot/fetch-metadata@08eff52bf64351f401fb50d4972fa95b9f2c2d1b   # 2.4.0
+        uses: dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36   # 3.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -62,7 +62,7 @@ jobs:
           EOF
 
       - name: Checkout repository
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683   # 4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd   # 6.0.2
         with:
           ref: ${{ steps.dependabot-metadata.outputs.target-branch }}
 
@@ -74,7 +74,7 @@ jobs:
           wget -O- "$PATCH_URL" | git apply
 
       - name: Set up Java & GPG
-        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00   # 4.7.1
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654   # 5.2.0
         with:
           distribution: zulu
           java-version: ${{ inputs.java-version }}
