@@ -83,7 +83,7 @@ jobs:
       # preventing reproducibility results from being affected by cached outputs from other workflows.
       #
       - name: Set up Maven Cache
-        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809   # 4.2.4
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae   # 5.0.5
         with:
           path: ~/.m2/repository
           key: "${{ env.CACHE_KEY }}-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}"
