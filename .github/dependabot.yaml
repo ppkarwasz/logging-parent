@@ -38,6 +38,13 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+    target-branch: main
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+    target-branch: feat/dependabot-add-changelog-test
 
   - package-ecosystem: npm
     directory: "/"
