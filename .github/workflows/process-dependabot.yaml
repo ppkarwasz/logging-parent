@@ -33,7 +33,7 @@ jobs:
   process-dependabot:
     # Skip this workflow on commits not pushed by Dependabot
     if: ${{
-      github.repository == 'apache/logging-parent'
+      github.repository == 'ppkarwasz/logging-parent'
       && github.actor == 'dependabot[bot]'
       && github.event.workflow_run.conclusion == 'success'
       }}
